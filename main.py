@@ -1,3 +1,4 @@
+
 from turtle import home
 
 
@@ -22,10 +23,11 @@ for key in home_town:
 cohort = []
 
 for x in range(0,3):
-    print(x)
-    cohort[x] = {
+    cohort.append({
         "student": "carl",
         "fav_food": "pizza"
-    }
+    })
 
-print(cohort)
+cohort = [print(person) for person in cohort]
+
+foods = [print(food) for food in foods if "a" in food]
